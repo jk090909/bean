@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+}
+
 ul {
     list-style-type: none;
 }
@@ -10,7 +17,7 @@ a {
     text-decoration: none;
 }
 
-body > h1 > a > .toggle {
+body > h1 > a .toggle {
     position: absolute;
     left: 20px;
     top: 20px;
@@ -20,7 +27,7 @@ body > h1 > a > .toggle {
     border: none;
 }
 
-body > h1 > a > .cart {
+body > h1 > a .cart {
     position: absolute;
     right: 20px;
     top: 20px;
@@ -29,65 +36,63 @@ body > h1 > a > .cart {
 }
 
 body > h1 > a > .logo {
+    /* outline: 1px solid red; */
     margin-top: 10px;
-    margin-left: 130px;
-    text-align: center;
+    margin-left: 10px;
 }
 
-body {
-    color: #333;
-    font-family: 'Noto Sans KR', sans-serif;
-}
 
 h2 {
     text-align: center;
     margin-top: 40px;
 }
 
-section > .slogun {
+section .slogun {
     text-align: center;
     text-shadow: 1px 0 1px;
     font-size: 13px;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-.bean > img {
-  margin-top: 20px;
-  margin-right: 10px;
-  width: 160px;
-  height: 190px;
+#about .bean {
+  /* outline: 1px solid red; */
+  margin-top: 10px;
+  padding: 10px;
+  width: 50%;
   float: right;
+  box-sizing: border-box;
 }
 
-section > .main {
+#about .bean > img {
+    width: 100%;
+}
+
+#about .main {
     /* outline: 1px solid red; */
-    width: 210px;
-    height: 222px;
+    width: 50%;
     font-size: 10px;
+    text-align: left;
     line-height: 20px;
-    margin-left: 10px;
+    padding: 10px;
     margin-bottom: 30px;
     float: left;
-}
-
-section > .main .wn {
-    text-align: center;
+    box-sizing: border-box;
 }
 
 #icon {
-    background: #fff;
-    display: inline-block;
-    width: 400px;
+    clear: both;
+    text-align: center;
+    width: 100%;
     height: 100px;
     /* outline: 1px solid blue; */
-    padding-top: 30px;
 }
 
 section > ul li {
     
     display: inline-block;
     list-style-type: none;
-    width: 22%;
+    width: 24%;
     font-size: 12px;
     /* outline: 1px solid red; */
     text-align: center;
@@ -98,6 +103,30 @@ section > ul li {
     font-size: 10px;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 131px;
+    margin-bottom: 10px;
     color: darkgoldenrod;
+}
+
+/*main_footer*/
+
+#main_footer {
+    margin-top: 46px;
+    width: 100%;
+    background-color: #ccc;
+    background-image: url("../images/footer_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+#main_footer .sns > img {
+    margin: 15px 27px 0px 27px;
+}
+
+#main_footer .copy {
+    margin-top: 10px;
+    line-height: 13px;
+    font-size: 8px;
+    padding-bottom: 10px;
 }
